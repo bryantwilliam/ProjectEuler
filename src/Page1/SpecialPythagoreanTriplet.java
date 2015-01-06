@@ -1,15 +1,18 @@
 package Page1;
+
 //Problem 9
 public class SpecialPythagoreanTriplet {
     public static void main(String args[]) {
-        int a = 3;
-        int b = 4;
-        System.out.println(getC(a, b));
-    }
+        for (int a = 0; a < 500; a++) {
+            for (int b = 0; b < 500; b++) {
+                double c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+                if ((a < b) & (b < c)) {
+                    if ((a + b + c) == 1000) {
+                        System.out.println("Product: " + a * b * (int) c);
+                    }
+                }
 
-    public static int getC(int a, int b) {
-        int c = (int) Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-
-        return c;
+            }
+        }
     }
 }
