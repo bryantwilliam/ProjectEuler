@@ -45,8 +45,8 @@ public class SummationOfPrimes {
 /*
 OUTPUT FOR: 2_000_000 as ALL_PRIMES_BELOW value:
 
-The sum of all the primes that are below 2_000_000 is 142913828922.
-Total time taken to run this bad boy: 6671 mili-seconds
+The sum of all the primes that are below 2000000 is 142913828922.
+Total time taken to run this bad boy: 6707 mili-seconds
 */
 
 
