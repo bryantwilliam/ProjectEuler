@@ -1,8 +1,5 @@
 package Page1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 //Problem 10
 public class SummationOfPrimes {
     public static final int ALL_PRIMES_BELOW = 2_000_000;
@@ -10,8 +7,6 @@ public class SummationOfPrimes {
     public static void main(String args[]) {
         long begTime = System.currentTimeMillis();
         // And, start!
-
-
         long sumPrimes = 0;
         for (int guess = 2; guess < ALL_PRIMES_BELOW; guess++) {
             boolean testFailed = false;
@@ -31,22 +26,17 @@ public class SummationOfPrimes {
             }
         }
         System.out.println("The sum of all the primes that are below " + ALL_PRIMES_BELOW + " is " + sumPrimes + ".");
-
-
         // Finished!
         long endTime = System.currentTimeMillis();
-        System.out.printf("Total time taken to run this bad boy: " + (endTime - begTime) + " mili-seconds");
+        System.out.printf("Total time taken to run this bad boy: " + (endTime - begTime) + " mili-seconds.");
     }
-
-
-
 }
 
 /*
 OUTPUT FOR: 2_000_000 as ALL_PRIMES_BELOW value:
 
 The sum of all the primes that are below 2000000 is 142913828922.
-Total time taken to run this bad boy: 6707 mili-seconds
+Total time taken to run this bad boy: 6650 mili-seconds.
 */
 
 
