@@ -1,15 +1,20 @@
 package Page1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Problem 10
 public class SummationOfPrimes {
     public static final int ALL_PRIMES_BELOW = 2_000_000;
 
     public static void main(String args[]) {
         long begTime = System.currentTimeMillis();
+        // And, start!
+
+
         long sumPrimes = 0;
         for (int guess = 2; guess < ALL_PRIMES_BELOW; guess++) {
             boolean testFailed = false;
-            //Trial and error
             if (guess % 2 == 0 && guess != 2) {
                 testFailed = true;
             } else {
@@ -19,11 +24,6 @@ public class SummationOfPrimes {
                     }
                 }
             }
-                /* //Fermat's Little Theorem
-                if (Math.pow(3, guess) % guess != 3 % guess) {
-                    testFailed = true;
-                }*/
-
 
             if (!testFailed) {
                 System.out.println("Lol, just found a prime! " + guess);
@@ -31,6 +31,9 @@ public class SummationOfPrimes {
             }
         }
         System.out.println("The sum of all the primes that are below " + ALL_PRIMES_BELOW + " is " + sumPrimes + ".");
+
+
+        // Finished!
         long endTime = System.currentTimeMillis();
         System.out.printf("Total time taken to run this bad boy: " + (endTime - begTime) + " mili-seconds");
     }
