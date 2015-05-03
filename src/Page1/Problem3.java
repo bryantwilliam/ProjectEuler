@@ -4,7 +4,7 @@ package Page1;
 import java.util.ArrayList;
 import java.util.List;
 
-class LargestPrimeFactor {
+class Problem3 {
 	static long N = 600851475143L;
 
 	public static void main(String a[]) {

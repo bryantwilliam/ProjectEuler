@@ -1,7 +1,7 @@
 package Page1;
 
 //Problem 5
-public class SmallestMultiple {
+public class Problem5 {
 	public static void main(String[] args) {
 		boolean solved = false;
 		int num = 1;

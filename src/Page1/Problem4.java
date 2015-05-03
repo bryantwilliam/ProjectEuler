@@ -4,7 +4,7 @@ package Page1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LargestPalindromeProduct {
+public class Problem4 {
 	public static boolean isPalindrome(String str) {
 
 		str = str.toUpperCase();

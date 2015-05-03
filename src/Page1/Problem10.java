@@ -1,7 +1,7 @@
 package Page1;
 
 //Problem 10
-public class SummationOfPrimes {
+public class Problem10 {
     public static final int ALL_PRIMES_BELOW = 2_000_000;
 
     public static void main(String args[]) {

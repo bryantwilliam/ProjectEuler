@@ -1,7 +1,7 @@
 package Page1;
 
 //Problem 7
-public class The10001stPrime {
+public class Problem7 {
 	public static final int PRIME_INDEX = 10001;
 
 	public static void main(String[] args) {

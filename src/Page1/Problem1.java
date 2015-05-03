@@ -1,7 +1,7 @@
 package Page1;
 
 //Problem 1
-class MultipelsOf3And5 {
+class Problem1 {
 	public static void main(String[] a) {
 		int sum = 0;
 		for (int i = 0; i <= 1000; i++) {

@@ -1,7 +1,7 @@
 package Page1;
 
 //Problem 2
-class EvenFibonacciNumbers {
+class Problem2 {
 	public static void main(String[] r) {
 		int a = 1, b = 2, c, s = 0;
 		while (b < 4000000) {

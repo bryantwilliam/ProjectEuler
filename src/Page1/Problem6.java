@@ -1,7 +1,7 @@
 package Page1;
 
 //Problem 6
-public class SumSquareDifference {
+public class Problem6 {
 	public static void main(String[] args) {
 		int sumOfSquares = 0;
 		int sum = 0;
