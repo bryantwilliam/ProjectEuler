@@ -16,7 +16,7 @@ public class Problem7 {
 					testFailed = true;
 				}
 			}
-			if (testFailed == false) {
+			if (!testFailed) {
 				if (amountPrimesFound == PRIME_INDEX - 1) {
 					System.out.println(primeGuess);
 				}
