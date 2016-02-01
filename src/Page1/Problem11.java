@@ -67,7 +67,7 @@ public class Problem11 {
 
             // Down/Right Diagonal pairs
             if (!(pairIndex + ((SQUARE_SIDE_LENGTH + 1) * 4) > PAIRS.size())) {
-                greatestProductSoFar = getGreatestProductSoFar(greatestProductSoFar, getDownLeftDiagonal4Pairs(pairIndex));
+                greatestProductSoFar = getGreatestProductSoFar(greatestProductSoFar, getDownRightDiagonal4Pairs(pairIndex));
             }
 
             System.out.println(greatestProductSoFar);
@@ -83,49 +83,49 @@ public class Problem11 {
     }
 
     private static List<Integer> getLeft4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index > pairIndex - 4; index--) pairs.add(PAIRS.get(index));
         return pairs;
     }
 
     private static List<Integer> getRight4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index < pairIndex + 4; index++) pairs.add(PAIRS.get(index));
         return pairs;
     }
 
     private static List<Integer> getUp4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index > pairIndex - (SQUARE_SIDE_LENGTH * 4); index-=SQUARE_SIDE_LENGTH) pairs.add(PAIRS.get(index));
         return pairs;
     }
 
     private static List<Integer> getDown4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index < pairIndex + (SQUARE_SIDE_LENGTH * 4); index+=SQUARE_SIDE_LENGTH) pairs.add(PAIRS.get(index));
         return pairs;
     }
 
     private static List<Integer> getUpLeftDiagonal4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index > pairIndex - ((SQUARE_SIDE_LENGTH + 1) * 4); index-=SQUARE_SIDE_LENGTH + 1) pairs.add(PAIRS.get(index));
         return pairs;
     }
 
     private static List<Integer> getUpRightDiagonal4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index > pairIndex - ((SQUARE_SIDE_LENGTH - 1) * 4); index-=SQUARE_SIDE_LENGTH - 1) pairs.add(PAIRS.get(index));
         return pairs;
     }
 
     private static List<Integer> getDownLeftDiagonal4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index < pairIndex + ((SQUARE_SIDE_LENGTH - 1) * 4); index+=SQUARE_SIDE_LENGTH - 1) pairs.add(PAIRS.get(index));
         return pairs;
     }
 
     private static List<Integer> getDownRightDiagonal4Pairs(int pairIndex) {
-        List<Integer> pairs = new ArrayList<>();
+        List<Integer> pairs = new ArrayList<>(4);
         for (int index = pairIndex; index < pairIndex + ((SQUARE_SIDE_LENGTH + 1) * 4); index+=SQUARE_SIDE_LENGTH + 1) pairs.add(PAIRS.get(index));
         return pairs;
     }
